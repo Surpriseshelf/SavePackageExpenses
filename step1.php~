@@ -1,0 +1,20 @@
+<hmtl>
+  <head>
+    <title> This is the first step </title>
+  </head>
+  <body>
+    <p>Hello Sus!</p>
+	<?php
+	  echo 'HelloWorld by Sus!';
+	  echo '</br>';
+	  echo "<a href=\"test.php\">";
+	  echo 'See detail of php!';
+	  echo "</a>";
+	  echo '</br>';
+	  echo 'See the photo below';
+	  echo '<img src="/star.jpg">';
+	  echo '</img>';
+	 
+	?> 
+ </body>
+</html>
