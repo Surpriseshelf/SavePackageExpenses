@@ -1,3 +1,12 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta charset="utf-8">
+<meta name="keywords" content="话费套餐, 手机话费, 推荐套餐" />
+
+</head>
+<body>
 <?php
 	//connect to MySQL
 	echo 'Trying to connect to PhoneSet!<br>';
@@ -13,6 +22,7 @@
  	}
 
 	echo 'PhoneSet database successfulingly connected!<br>';
+	mysql_query("SET NAMES UTF8");
 
 	//make sure our recently created database is the active one
 	mysql_select_db('PhoneSet', $db) or die(mysql_error($db));
@@ -69,3 +79,5 @@ while ($row = mysql_fetch_assoc($result)) {
 ?>
  </table>
 </div>
+</body>
+</html>

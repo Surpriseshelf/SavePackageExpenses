@@ -14,6 +14,7 @@
  	}
 
 	echo 'PhoneSet database successfulingly connected!<br>';
+	mysql_query("SET NAMES UTF8");
 
 	//make sure you're using the correct database
 	mysql_select_db('PhoneSet', $db) or die(mysql_error($db));

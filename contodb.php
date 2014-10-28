@@ -13,6 +13,7 @@
  	}
 
 	echo 'PhoneSet database successfulingly connected!<br>';
+	mysql_query("SET NAMES UTF8");
 
 	//create the main database if it doesn't already exist
 	$query = "CREATE DATABASE IF NOT EXISTS PhoneSet
@@ -36,8 +37,7 @@
 		longdiscall		FLOAT			NOT NULL DEFAULT 0,
 		flowcharge 		FLOAT			NOT NULL DEFAULT 0,
 		smscharge		FLOAT			NOT NULL DEFAULT 0
-    ) 
-    ENGINE=MyISAM DEFAULT CHARSET=utf8';
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8';
 	mysql_query($query, $db) or die (mysql_error($db));
 
 
